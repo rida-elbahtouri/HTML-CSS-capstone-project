@@ -1,0 +1,94 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #bcc1c1;
+}
+
+nav {
+  background-color: #f85c50;
+  height: 40px;
+  padding-top: 16px;
+  color: #f1f2f2;
+}
+
+.left {
+  float: left;
+  font-size: 1.35rem;
+  padding-left: 1.35rem;
+  margin-top: -10px;
+}
+
+.left a {
+  margin-top: 10px;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  padding-left: 32px;
+}
+
+.left a i {
+  margin-right: 10px;
+  font-size: 1.8rem;
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+.right {
+  float: right;
+  padding-top: 4px;
+}
+
+.right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.right ul li {
+  margin-right: 15px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.right ul li i {
+  margin-right: 5px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .tablet-hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    text-align: center;
+    height: 70px;
+  }
+  .left,
+  .right {
+    float: none;
+    padding-left: 0;
+  }
+  .right ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .right ul li {
+    margin-right: 8%;
+  }
+  .right ul li:last-child {
+    margin-right: 0;
+  }
+}
