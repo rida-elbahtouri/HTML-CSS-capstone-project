@@ -1,10 +1,11 @@
 main {
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
 .filter-search {
   background-color: #f1f2f2;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .filter-search h1 {
@@ -64,6 +65,63 @@ main {
   background-color: #ffc11e;
 }
 
+.search-result {
+  text-align: center;
+}
+
+.search-result h1 {
+  font-size: 1.35rem;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.cards-container div {
+  width: 32%;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.cards-container div img {
+  width: 100%;
+  height: 100%;
+}
+
+.cards-container div a.link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  background-color: #f85c50;
+  font-size: 1.1rem;
+  color: #f1f2f2;
+}
+
+.cards-container div a.link:hover {
+  color: #f85c50;
+  background-color: #f1f2f2;
+}
+
+.cards-container div span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  background-color: #f85c50;
+  font-size: 1.1rem;
+  color: #f1f2f2;
+}
+
 @media screen and (max-width: 1024px) {
   .forms-group form {
     width: 16%;
@@ -74,6 +132,9 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  main {
+    margin-top: 86px;
+  }
   .forms-group {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -94,5 +155,8 @@ main {
   }
   .forms-group .last {
     width: 98%;
+  }
+  .cards-container div {
+    width: 99%;
   }
 }

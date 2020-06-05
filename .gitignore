@@ -2,3 +2,4 @@ node_modules/
 package-lock.json
 assets/css/style.scss
 assets/css/search.scss
+assets/css/Details.scss
