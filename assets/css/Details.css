@@ -1,0 +1,168 @@
+main {
+  margin-top: 100px;
+}
+
+.car-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.car-info div {
+  width: 45%;
+}
+
+.location img {
+  width: 100%;
+}
+
+.car-info div img {
+  width: 100%;
+}
+
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.information h1 {
+  width: 100%;
+  font-size: 1.35rem;
+}
+
+.information .button {
+  width: 100%;
+}
+
+.discription button {
+  padding: 2px 3px;
+  font-size: 1.35rem;
+  border: 0;
+  border-radius: 5px;
+  background-color: #f85c50;
+  color: #f1f2f2;
+  width: 100%;
+  margin: 10px 2px;
+}
+
+.information .button button {
+  padding: 5px 10px;
+  background-color: #f85c50;
+  cursor: pointer;
+  color: #f1f2f2;
+  font-size: 1.35rem;
+  border-radius: 10px;
+  border: 0;
+}
+
+.discription button:hover {
+  background-color: #f74537;
+}
+
+.information .button button:hover {
+  background-color: #f62e1f;
+  color: #bcc1c1;
+}
+
+.information div {
+  width: 48%;
+}
+
+.discription p {
+  font-size: 1.1rem;
+}
+
+.discription p span {
+  color: rgba(0, 0, 0, 0.664);
+}
+
+.information div p {
+  border: 1px solid gray;
+  width: 80%;
+  border-radius: 3px;
+  padding: 5px 5%;
+  margin: 0 auto;
+}
+
+.information div p span {
+  margin-right: 5px;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.information div p .red {
+  background-color: red;
+}
+
+.information div p .gray {
+  background-color: gray;
+}
+
+.information div p .blue {
+  background-color: #5050f8;
+}
+
+.information div p .black {
+  color: white;
+  background-color: black;
+}
+
+.information div .desc {
+  color: blue;
+  font-weight: bolder;
+}
+
+.location-disc {
+  margin: 20px;
+}
+
+.location-disc div {
+  width: 100%;
+}
+
+.discription i {
+  margin: 0 20px;
+}
+
+.location {
+  text-align: center;
+}
+
+.location h1 {
+  font-size: 1.35rem;
+  color: #f85c50;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .car-info {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .car-info div {
+    width: 100%;
+  }
+
+  .button {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 86px;
+  }
+}

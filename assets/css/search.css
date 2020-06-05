@@ -19,8 +19,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .forms-group form {
@@ -80,9 +80,9 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
@@ -126,6 +126,7 @@ main {
   .forms-group form {
     width: 16%;
   }
+
   .forms-group .last {
     width: 22%;
   }
@@ -135,27 +136,33 @@ main {
   main {
     margin-top: 86px;
   }
+
   .forms-group {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   .forms-group form {
     width: 98%;
     padding: 5px 10px;
   }
+
   .forms-group form input {
     width: 100%;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
+
   .forms-group .btn {
     width: 48%;
   }
+
   .forms-group .last {
     width: 98%;
   }
+
   .cards-container div {
     width: 99%;
   }

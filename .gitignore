@@ -3,3 +3,4 @@ package-lock.json
 assets/css/style.scss
 assets/css/search.scss
 assets/css/Details.scss
+assets/css/base.scss

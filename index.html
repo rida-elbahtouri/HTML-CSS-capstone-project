@@ -8,18 +8,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
     <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Find your dream house</title>
   </head>
   <body>
     <nav>
       <div class="left">
-        <a href="index.html"><i class="fas fa-car"></i> CarRenting</a>
+        <a href="/index.html"><i class="fas fa-car"></i> CarRenting</a>
       </div>
       <div class="right">
         <ul>
           <li>
-            <a href="SearchPage.html">
+            <a href="#search">
               <i class="fas fa-search"></i
               ><span class="tablet-hidden"> Cars</span></a
             >
@@ -45,138 +46,155 @@
         </ul>
       </div>
     </nav>
-    <div class="header">
-      <div class="header-centent">
-        <h1 class="title">
-          Car renter Find the best cars with the best prices
-        </h1>
-        <form class="nav-form" action="/SearchPage.html">
-          <label for="search">SEARCH BY KEY WORD:</label>
-          <input type="text" />
-          <button type="submit">SEARCH</button>
-        </form>
-        <a class="how-work" href="#">
-          How it work
-        </a>
-      </div>
-    </div>
-    <main>
-      <section>
-        <h1>Car renter works in four simple steps</h1>
-        <div class="steps">
-          <i class="fas fa-search"></i>
-          <h1>1-SEARCH</h1>
-          <p>
-            searching here is very simple just put the name of the car you want
-            and we will provide you with a list of our ََagency that provides
-            this car.
-          </p>
-        </div>
-        <div class="steps">
-          <i class="fas fa-map-marked-alt"></i>
-          <h1>2-LOCATE</h1>
-          <p>
-            Click on one of the cars on the result page and it will provide you
-            with the location of agencies close to you that provide that car.
-          </p>
-        </div>
-        <div class="steps">
-          <i class="fab fa-wpforms"></i>
-          <h1>3-FILL A FORM</h1>
-          <p>
-            fill a simple form with some basic information (name, address...) ,
-            and how many days the car will be rented.
-          </p>
-        </div>
-        <div class="steps">
-          <i class="fas fa-road"></i>
-          <h1>4-TAKE YOUR CAR</h1>
-          <p>
-            after you get a response go to the agency and take your car,and if
-            you didn't like it for some reason you can change it.
-          </p>
-        </div>
-      </section>
-      <div class="first-div two-fr">
-        <div class="text">
-          <h1>Over 25 agency around the country</h1>
-          <p>Find the cars you want with zero effort</p>
-          <a class="how-work" href="#">Find cars</a>
-        </div>
-        <div class="image-prefooter">
-          <img src="assets/img/location.jpg" alt="location" />
-        </div>
-      </div>
-      <div class="second-div two-fr">
-        <div class="text">
-          <h1>no worry if the car stop working</h1>
-          <p>
-            if it stops working we give you another one if you still need it, or
-            we pay you back your money
-          </p>
-          <a class="how-work" href="#">learn more</a>
-        </div>
-        <div class="image-prefooter">
-          <img src="assets/img/fix.jpg" alt="fix" />
-        </div>
-      </div>
-      <div class="third-div two-fr">
-        <div class="text">
-          <h1>Access from everywhere</h1>
-          <p>
-            our website is responsive and works perfectly with the small devices
-          </p>
-        </div>
-        <div class="phone-screen image-prefooter">
-          <img src="assets/img/Screenshot-phone.png" alt="Screenshot-phone" />
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="footer-links">
-        <ul>
-          <li><a href="#"> HOME</a></li>
-          <li><a href="#"> SEARCH</a></li>
-          <li><a href="#"> ABOUT US</a></li>
-          <li class="last-right"><a href="#">ADVERTISE</a></li>
-        </ul>
-        <span class="fas fa-car"></span>
-        <ul>
-          <li class="last-left"><a href="#">FACEBOOK</a></li>
-          <li><a href="#"> TWITTER</a></li>
-          <li><a href="#"> BLOG</a></li>
-          <li><a href="#"> GOOGLE+</a></li>
-        </ul>
-      </div>
-      <div class="footer-flex">
-        <div class="footer-flex-div">
-          <h1>
-            SUBSCRIBE
+    <div class="container">
+      <div id="search" class="header">
+        <div class="header-centent">
+          <h1 class="title">
+            Car renter Find the best cars with the best prices
           </h1>
-          <div class="submit-email">
-            <input type="text" placeholder="your@exemple.com" />
-            <button>Send</button>
+          <form class="nav-form" action="/SearchPage.html">
+            <label>SEARCH BY KEY WORD:</label>
+            <input type="text" />
+            <button type="submit">SEARCH</button>
+          </form>
+          <a class="how-work" href="#howitwork">
+            How it work
+          </a>
+        </div>
+      </div>
+      <main>
+        <section>
+          <h2>Car renter works in four simple steps</h2>
+          <div class="steps" id="howitwork">
+            <i class="fas fa-search"></i>
+            <h2>1-SEARCH</h2>
+            <p>
+              searching here is very simple just put the name of the car you
+              want and we will provide you with a list of our ََagency that
+              provides this car.
+            </p>
+          </div>
+          <div class="steps">
+            <i class="fas fa-map-marked-alt"></i>
+            <h2>2-LOCATE</h2>
+            <p>
+              Click on one of the cars on the result page and it will provide
+              you with the location of agencies close to you that provide that
+              car.
+            </p>
+          </div>
+          <div class="steps">
+            <i class="fab fa-wpforms"></i>
+            <h2>3-FILL A FORM</h2>
+            <p>
+              fill a simple form with some basic information (name, address...)
+              , and how many days the car will be rented.
+            </p>
+          </div>
+          <div class="steps">
+            <i class="fas fa-road"></i>
+            <h2>4-TAKE YOUR CAR</h2>
+            <p>
+              after you get a response go to the agency and take your car,and if
+              you didn't like it for some reason you can change it.
+            </p>
+          </div>
+        </section>
+        <div class="first-div two-fr">
+          <div class="text">
+            <h1>Over 25 agency around the country</h1>
+            <p>Find the cars you want with zero effort</p>
+            <a class="how-work" href="#">Find cars</a>
+          </div>
+          <div class="image-prefooter">
+            <img src="assets/img/location.jpg" alt="location" />
           </div>
         </div>
-        <div class="footer-flex-div">
-          <h1>
-            CONTACT
-          </h1>
-          <p>
-            if you have any question feel free to contact us on this email
-            <a href="#">car-renter@cars.com</a>
-          </p>
+        <div class="second-div two-fr">
+          <div class="text">
+            <h1>no worry if the car stop working</h1>
+            <p>
+              if it stops working we give you another one if you still need it,
+              or we pay you back your money
+            </p>
+            <a class="how-work" href="#">learn more</a>
+          </div>
+          <div class="image-prefooter">
+            <img src="assets/img/fix.jpg" alt="fix" />
+          </div>
         </div>
-        <div class="footer-flex-div">
-          <h1>
-            ABOUT
-          </h1>
-          <p>
-            we are a company that works on car renting field for more than 25
-            years with more than 70.000 happy customers
-          </p>
+        <div class="third-div two-fr">
+          <div class="text">
+            <h1>Access from everywhere</h1>
+            <p>
+              our website is responsive and works perfectly with the small
+              devices
+            </p>
+          </div>
+          <div class="phone-screen image-prefooter">
+            <img src="assets/img/Screenshot-phone.png" alt="Screenshot-phone" />
+          </div>
         </div>
-      </div>
-    </footer>
+      </main>
+      <footer>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#"> HOME</a></li>
+            <li><a href="#"> SEARCH</a></li>
+            <li><a href="#"> ABOUT US</a></li>
+            <li class="last-right"><a href="#">ADVERTISE</a></li>
+          </ul>
+          <span class="fas fa-car"></span>
+          <ul>
+            <li class="last-left"><a href="#">FACEBOOK</a></li>
+            <li><a href="#"> TWITTER</a></li>
+            <li><a href="#"> BLOG</a></li>
+            <li><a href="#"> GOOGLE+</a></li>
+          </ul>
+        </div>
+        <div class="footer-flex">
+          <div class="footer-flex-div">
+            <h1>
+              SUBSCRIBE
+            </h1>
+            <div class="submit-email">
+              <input type="text" placeholder="your@exemple.com" />
+              <button>Send</button>
+            </div>
+          </div>
+          <div class="footer-flex-div">
+            <h1>
+              CONTACT
+            </h1>
+            <p>
+              if you have any question feel free to contact us on this email
+              <a href="#">car-renter@cars.com</a>
+            </p>
+          </div>
+          <div class="footer-flex-div">
+            <h1>
+              ABOUT
+            </h1>
+            <p>
+              we are a company that works on car renting field for more than 25
+              years with more than 70.000 happy customers
+            </p>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="soicial-icons">
+            <a href="#"> <i class="fab mr-3 fa-facebook-square"></i></a>
+            <a href="#"> <i class="fab mr-3 fa-twitter"></i></a>
+            <a href="#"> <i class="fab mr-3 fa-instagram"></i></a>
+            <a href="#"> <i class="fab mr-3 fa-tumblr"></i></a>
+            <a href="#"> <i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="rights">
+            © 2020 CarRenting, The design of CarRenting are registered
+            trademarks of CarRenting
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

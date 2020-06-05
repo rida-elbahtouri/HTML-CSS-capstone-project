@@ -8,19 +8,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
     <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/search.css" />
     <title>Find your dream house</title>
   </head>
   <body>
     <nav>
       <div class="left">
-        <a href="#"><i class="fas fa-car"></i> CarRenting</a>
+        <a href="/index.html"><i class="fas fa-car"></i> CarRenting</a>
       </div>
       <div class="right">
         <ul>
           <li>
-            <a href="#">
+            <a href="#search">
               <i class="fas fa-search"></i
               ><span class="tablet-hidden"> Cars</span></a
             >
@@ -46,158 +46,175 @@
         </ul>
       </div>
     </nav>
-    <main class="searchpage">
-      <div class="filter-search">
-        <h1>Filter by model,type,color,price</h1>
-        <div class="forms-group">
-          <form>
-            <label for="name">Car Name :</label>
-            <input type="text" />
-          </form>
-          <form>
-            <label for="model">Car model :</label>
-            <select name="model">
-              <option value="all"></option>
-              <option value="Ford">Ford</option>
-              <option value="volvo">Volvo</option>
-              <option value="toyota">Toyota</option>
-              <option value="mercedes">Mercedes</option>
-              <option value="audi">Audi</option>
-            </select>
-          </form>
-          <form>
-            <label for="type">Car type :</label>
-            <select name="types">
-              <option value="all"></option>
-              <option value="small">Small</option>
-              <option value="family">Family</option>
-              <option value="sport">Sport</option>
-            </select>
-          </form>
-          <form>
-            <label for="color">Car Color :</label>
-            <select name="colors">
-              <option value="all"></option>
-              <option value="black">black</option>
-              <option value="white">white</option>
-              <option value="red">red</option>
-              <option value="gray">gray</option>
-              <option value="other">other</option>
-            </select>
-          </form>
-          <form>
-            <label for="price">Car Price :</label>
-            <select name="price">
-              <option value="all"></option>
-              <option value="less-20">less than 20$</option>
-              <option value="20-40">between 20$ and 40$</option>
-              <option value="more-40">more than 40$</option>
-            </select>
-          </form>
-          <form class="last">
-            <label for="buttons">-</label>
-            <button class="btn search">Search</button>
-            <button class="btn clear"><i class="far fa-edit"></i> Clear</button>
-          </form>
-        </div>
-      </div>
-      <div class="search-result">
-        <h1>Search Results Found 6 car(s)</h1>
-        <div class="cards-container">
-          <div>
-            <a href="/DetailsPage.html"
-              ><img
-                src="assets/img/cars/blue-bmw-sedan.jpg"
-                alt="blue-bmw-sedan"
-            /></a>
-            <a class="link" href="/DetailsPage.html">Blue BMW</a>
-            <span>25$/day</span>
-          </div>
-          <div>
-            <a href="/DetailsPage.html"
-              ><img
-                src="assets/img/cars/blue-wagon-audi.jpg"
-                alt="blue-wagon-audi"
-            /></a>
-            <a class="link" href="/DetailsPage.html">Blue Audi</a>
-            <span>22$/day</span>
-          </div>
-          <div>
-            <a href="/DetailsPage.html">
-              <img src="assets/img/cars/merc.jpg" alt="mercedes"
-            /></a>
-            <a class="link" href="/DetailsPage.html">Yellow Mercedes</a>
-            <span>39$/day</span>
-          </div>
-          <div>
-            <a href="/DetailsPage.html"
-              ><img src="assets/img/cars/merc2.jpg" alt="mercedes2"
-            /></a>
-            <a class="link" href="/DetailsPage.html">White Mercedes</a>
-            <span>45$/day</span>
-          </div>
-          <div>
-            <a href="/DetailsPage.html"
-              ><img src="assets/img/cars/volvo.jpg" alt="volvo"
-            /></a>
-            <a class="link" href="/DetailsPage.html">Volvo</a>
-            <span>35$/day</span>
-          </div>
-          <div>
-            <a href="/DetailsPage.html"
-              ><img src="assets/img/cars/white-nissan.jpg" alt="white-nissan"
-            /></a>
-            <a class="link" href="/DetailsPage.html">White Nissan</a>
-            <span>40$/day</span>
+    <div class="container">
+      <main class="searchpage">
+        <div class="filter-search">
+          <h1>Filter by model,type,color,price</h1>
+          <div class="forms-group">
+            <form>
+              <label>Car Name :</label>
+              <input type="text" />
+            </form>
+            <form>
+              <label>Car model :</label>
+              <select name="model">
+                <option value="all">-</option>
+                <option value="Ford">Ford</option>
+                <option value="volvo">Volvo</option>
+                <option value="toyota">Toyota</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+            </form>
+            <form>
+              <label>Car type :</label>
+              <select name="types">
+                <option value="all">-</option>
+                <option value="small">Small</option>
+                <option value="family">Family</option>
+                <option value="sport">Sport</option>
+              </select>
+            </form>
+            <form>
+              <label>Car Color :</label>
+              <select name="colors">
+                <option value="all">-</option>
+                <option value="black">black</option>
+                <option value="white">white</option>
+                <option value="red">red</option>
+                <option value="gray">gray</option>
+                <option value="other">other</option>
+              </select>
+            </form>
+            <form>
+              <label>Car Price :</label>
+              <select name="price">
+                <option value="all">-</option>
+                <option value="less-20">less than 20$</option>
+                <option value="20-40">between 20$ and 40$</option>
+                <option value="more-40">more than 40$</option>
+              </select>
+            </form>
+            <form class="last">
+              <label>-</label>
+              <button class="btn search">Search</button>
+              <button class="btn clear">
+                <i class="far fa-edit"></i> Clear
+              </button>
+            </form>
           </div>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div class="footer-links">
-        <ul>
-          <li><a href="#"> HOME</a></li>
-          <li><a href="#"> SEARCH</a></li>
-          <li><a href="#"> ABOUT US</a></li>
-          <li class="last-right"><a href="#">ADVERTISE</a></li>
-        </ul>
-        <span class="fas fa-car"></span>
-        <ul>
-          <li class="last-left"><a href="#">FACEBOOK</a></li>
-          <li><a href="#"> TWITTER</a></li>
-          <li><a href="#"> BLOG</a></li>
-          <li><a href="#"> GOOGLE+</a></li>
-        </ul>
-      </div>
-      <div class="footer-flex">
-        <div class="footer-flex-div">
-          <h1>
-            SUBSCRIBE
-          </h1>
-          <div class="submit-email">
-            <input type="text" placeholder="your@exemple.com" />
-            <button>Send</button>
+        <div class="search-result">
+          <h1>Search Results Found 6 car(s)</h1>
+          <div class="cards-container">
+            <div>
+              <a href="/DetailsPage.html"
+                ><img
+                  src="assets/img/cars/blue-bmw-sedan.jpg"
+                  alt="blue-bmw-sedan"
+              /></a>
+              <a class="link" href="/DetailsPage.html">Blue BMW</a>
+              <span>25$/day</span>
+            </div>
+            <div>
+              <a href="/DetailsPage.html"
+                ><img
+                  src="assets/img/cars/blue-wagon-audi.jpg"
+                  alt="blue-wagon-audi"
+              /></a>
+              <a class="link" href="/DetailsPage.html">Blue Audi</a>
+              <span>22$/day</span>
+            </div>
+            <div>
+              <a href="/DetailsPage.html">
+                <img src="assets/img/cars/merc.jpg" alt="mercedes"
+              /></a>
+              <a class="link" href="/DetailsPage.html">Yellow Mercedes</a>
+              <span>39$/day</span>
+            </div>
+            <div>
+              <a href="/DetailsPage.html"
+                ><img src="assets/img/cars/merc2.jpg" alt="mercedes2"
+              /></a>
+              <a class="link" href="/DetailsPage.html">White Mercedes</a>
+              <span>45$/day</span>
+            </div>
+            <div>
+              <a href="/DetailsPage.html"
+                ><img src="assets/img/cars/volvo.jpg" alt="volvo"
+              /></a>
+              <a class="link" href="/DetailsPage.html">Volvo</a>
+              <span>35$/day</span>
+            </div>
+            <div>
+              <a href="/DetailsPage.html"
+                ><img src="assets/img/cars/white-nissan.jpg" alt="white-nissan"
+              /></a>
+              <a class="link" href="/DetailsPage.html">White Nissan</a>
+              <span>40$/day</span>
+            </div>
           </div>
         </div>
-        <div class="footer-flex-div">
-          <h1>
-            CONTACT
-          </h1>
-          <p>
-            if you have any question feel free to contact us on this email
-            <a href="#">car-renter@cars.com</a>
-          </p>
+      </main>
+      <footer>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#"> HOME</a></li>
+            <li><a href="#"> SEARCH</a></li>
+            <li><a href="#"> ABOUT US</a></li>
+            <li class="last-right"><a href="#">ADVERTISE</a></li>
+          </ul>
+          <span class="fas fa-car"></span>
+          <ul>
+            <li class="last-left"><a href="#">FACEBOOK</a></li>
+            <li><a href="#"> TWITTER</a></li>
+            <li><a href="#"> BLOG</a></li>
+            <li><a href="#"> GOOGLE+</a></li>
+          </ul>
         </div>
-        <div class="footer-flex-div">
-          <h1>
-            ABOUT
-          </h1>
-          <p>
-            we are a company that works on car renting field for more than 25
-            years with more than 70.000 happy customers
-          </p>
+        <div class="footer-flex">
+          <div class="footer-flex-div">
+            <h1>
+              SUBSCRIBE
+            </h1>
+            <div class="submit-email">
+              <input type="text" placeholder="your@exemple.com" />
+              <button>Send</button>
+            </div>
+          </div>
+          <div class="footer-flex-div">
+            <h1>
+              CONTACT
+            </h1>
+            <p>
+              if you have any question feel free to contact us on this email
+              <a href="#">car-renter@cars.com</a>
+            </p>
+          </div>
+          <div class="footer-flex-div">
+            <h1>
+              ABOUT
+            </h1>
+            <p>
+              we are a company that works on car renting field for more than 25
+              years with more than 70.000 happy customers
+            </p>
+          </div>
         </div>
-      </div>
-    </footer>
+        <div class="copyright">
+          <div class="soicial-icons">
+            <a href="#"> <i class="fab mr-3 fa-facebook-square"></i></a>
+            <a href="#"> <i class="fab mr-3 fa-twitter"></i></a>
+            <a href="#"> <i class="fab mr-3 fa-instagram"></i></a>
+            <a href="#"> <i class="fab mr-3 fa-tumblr"></i></a>
+            <a href="#"> <i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="rights">
+            © 2020 CarRenting, The design of CarRenting are registered
+            trademarks of CarRenting
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
