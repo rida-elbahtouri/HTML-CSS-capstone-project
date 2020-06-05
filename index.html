@@ -14,12 +14,12 @@
   <body>
     <nav>
       <div class="left">
-        <a href="#"><i class="fas fa-car"></i> CarRenting</a>
+        <a href="index.html"><i class="fas fa-car"></i> CarRenting</a>
       </div>
       <div class="right">
         <ul>
           <li>
-            <a href="#">
+            <a href="SearchPage.html">
               <i class="fas fa-search"></i
               ><span class="tablet-hidden"> Cars</span></a
             >
@@ -50,10 +50,10 @@
         <h1 class="title">
           Car renter Find the best cars with the best prices
         </h1>
-        <form>
+        <form class="nav-form" action="/SearchPage.html">
           <label for="search">SEARCH BY KEY WORD:</label>
           <input type="text" />
-          <button>SEARCH</button>
+          <button type="submit">SEARCH</button>
         </form>
         <a class="how-work" href="#">
           How it work
@@ -98,15 +98,85 @@
         </div>
       </section>
       <div class="first-div two-fr">
-        <div>
-          <h1>over 25 agency around the country</h1>
+        <div class="text">
+          <h1>Over 25 agency around the country</h1>
           <p>Find the cars you want with zero effort</p>
           <a class="how-work" href="#">Find cars</a>
         </div>
-        <div>
+        <div class="image-prefooter">
           <img src="assets/img/location.jpg" alt="location" />
         </div>
       </div>
+      <div class="second-div two-fr">
+        <div class="text">
+          <h1>no worry if the car stop working</h1>
+          <p>
+            if it stops working we give you another one if you still need it, or
+            we pay you back your money
+          </p>
+          <a class="how-work" href="#">learn more</a>
+        </div>
+        <div class="image-prefooter">
+          <img src="assets/img/fix.jpg" alt="fix" />
+        </div>
+      </div>
+      <div class="third-div two-fr">
+        <div class="text">
+          <h1>Access from everywhere</h1>
+          <p>
+            our website is responsive and works perfectly with the small devices
+          </p>
+        </div>
+        <div class="phone-screen image-prefooter">
+          <img src="assets/img/Screenshot-phone.png" alt="Screenshot-phone" />
+        </div>
+      </div>
     </main>
+    <footer>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#"> HOME</a></li>
+          <li><a href="#"> SEARCH</a></li>
+          <li><a href="#"> ABOUT US</a></li>
+          <li class="last-right"><a href="#">ADVERTISE</a></li>
+        </ul>
+        <span class="fas fa-car"></span>
+        <ul>
+          <li class="last-left"><a href="#">FACEBOOK</a></li>
+          <li><a href="#"> TWITTER</a></li>
+          <li><a href="#"> BLOG</a></li>
+          <li><a href="#"> GOOGLE+</a></li>
+        </ul>
+      </div>
+      <div class="footer-flex">
+        <div class="footer-flex-div">
+          <h1>
+            SUBSCRIBE
+          </h1>
+          <div class="submit-email">
+            <input type="text" placeholder="your@exemple.com" />
+            <button>Send</button>
+          </div>
+        </div>
+        <div class="footer-flex-div">
+          <h1>
+            CONTACT
+          </h1>
+          <p>
+            if you have any question feel free to contact us on this email
+            <a href="#">car-renter@cars.com</a>
+          </p>
+        </div>
+        <div class="footer-flex-div">
+          <h1>
+            ABOUT
+          </h1>
+          <p>
+            we are a company that works on car renting field for more than 25
+            years with more than 70.000 happy customers
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

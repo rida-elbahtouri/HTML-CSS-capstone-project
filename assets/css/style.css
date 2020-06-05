@@ -18,6 +18,10 @@ nav {
   z-index: 2;
 }
 
+button {
+  cursor: pointer;
+}
+
 .left {
   float: left;
   font-size: 1.35rem;
@@ -92,7 +96,7 @@ nav {
   padding-bottom: 10px;
 }
 
-form {
+.nav-form {
   background-color: rgba(241, 242, 242, 0.6);
   width: 50%;
   text-align: left;
@@ -101,24 +105,23 @@ form {
   padding: 10px 10px 50px 10px;
 }
 
-form label {
+.nav-form label {
   display: block;
   padding: 20px 0;
 }
 
-form input {
+.nav-form input {
   width: 80%;
   height: 30px;
   padding-left: 10px;
   font-size: 18px;
 }
 
-form button {
+.nav-form button {
   height: 34px;
   border: 0;
   padding-top: 3px;
   padding-bottom: 3px;
-  cursor: pointer;
   margin-left: -5px;
   font-size: 18px;
   background-color: #f85c50;
@@ -181,6 +184,29 @@ section h1 {
       grid-template-columns: 2fr 1fr;
 }
 
+.two-fr .text {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.two-fr .text h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+
+.two-fr .text p {
+  padding: 10px 0;
+  font-size: 1.35rem;
+}
+
+.two-fr img {
+  width: 300px;
+  border-radius: 50%;
+  height: 300px;
+  margin: 10px 0;
+}
+
 .first-div {
   width: 100%;
   color: #f1f2f2;
@@ -191,16 +217,116 @@ section h1 {
   color: #f85c50;
 }
 
-.first-div img {
+.second-div {
   width: 100%;
+  color: #f1f2f2;
+  background-color: #58595b;
+}
+
+.second-div a {
+  color: black;
+}
+
+.third-div {
+  width: 100%;
+  background-color: #5199ff;
+}
+
+.phone-screen img {
+  border-radius: 50px 50px 0 0;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: #f1f2f2;
+  text-align: center;
+}
+
+.footer-links {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-links ul {
+  display: inline-block;
+  border-top: 1px solid #f1f2f2;
+  border-bottom: 1px solid #f1f2f2;
+  padding: 10px 0;
+}
+
+.footer-links ul li {
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.footer-links ul li a {
+  color: inherit;
+}
+
+.footer-links ul li a:hover {
+  color: #bcc1c1;
+}
+
+.footer-links ul .last-left {
+  padding-left: 12px;
+}
+
+.footer-links ul .last-right {
+  padding-right: 12px;
+}
+
+.footer-links span {
+  padding: 20px;
+  border: 1px solid #f1f2f2;
   border-radius: 50%;
+  margin: 0 -10px;
+}
+
+.footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer-flex-div {
+  width: 33%;
+}
+
+.footer-flex-div h1 {
+  margin-bottom: 10px;
+}
+
+.submit-email input {
+  background-color: transparent;
+  border: 1px solid gray;
+  color: gray;
+  padding: 2px;
+  font-size: 1.1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 60%;
+}
+
+.submit-email button {
+  background-color: gray;
+  color: #f1f2f2;
+  border: 1px solid gray;
+  padding: 4px 20px 0;
+  font-weight: bolder;
+  height: 28px;
+  margin-left: -4px;
 }
 
 @media screen and (max-width: 1024px) {
   .tablet-hidden {
     display: none;
   }
-  form {
+  .nav-form {
     width: 70%;
   }
   .steps {
@@ -238,24 +364,69 @@ section h1 {
     height: 100vh;
     margin-top: 86px;
   }
-  .header-centent {
-    -webkit-transform: unset;
-            transform: unset;
-    position: relative;
-    left: auto;
-    top: auto;
-  }
-  form {
+  .nav-form {
     width: 90%;
   }
-  form input {
+  .nav-form input {
     width: 95%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-bottom: 10px;
   }
-  form button {
+  .nav-form button {
     width: 95%;
     margin-left: 0;
+  }
+  .two-fr {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .two-fr .text {
+    margin-top: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .two-fr .text h1 {
+    font-size: 1.5rem;
+  }
+  .two-fr .text p {
+    padding: 10px 0;
+    font-size: 1.35rem;
+  }
+  .two-fr img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .image-prefooter {
+    margin: 10px auto;
+  }
+  .footer-links ul {
+    display: block;
+  }
+  .footer-links ul .last-left {
+    padding-left: 6px;
+  }
+  .footer-links ul .last-right {
+    padding-right: 6px;
+  }
+  .footer-links span {
+    padding: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin: -10px 0;
+  }
+  .footer-flex-div {
+    width: 99%;
+  }
+  .submit-email input {
+    width: 95%;
+  }
+  .submit-email button {
+    margin-top: 5px;
+    margin-left: 0;
+    width: 95%;
   }
 }
