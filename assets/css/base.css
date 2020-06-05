@@ -196,10 +196,6 @@ footer {
   .tablet-hidden {
     display: none;
   }
-
-  .nav-form {
-    width: 70%;
-  }
 }
 
 @media screen and (max-width: 768px) {

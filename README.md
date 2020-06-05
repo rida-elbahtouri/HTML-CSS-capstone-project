@@ -1,10 +1,10 @@
-## Using Bootstrap
+## HTML & CSS Capstone Project
 
-Project: Using Bootstrap
+Project: HTML & CSS Capstone Project
 
 ## Description
 
-this is a clone of the Newsweek website built base on Bootstrap
+this is the HTML/CSS Capstone project, and it is a Car renting web site that later it will have a backend service that will make it possible to search for cars and find the closes cars to you.
 
 ##Screenshot of the website
 
@@ -12,13 +12,14 @@ this is a clone of the Newsweek website built base on Bootstrap
 
 ## Built With
 
-- BOOTSTRAP 4
 - HTML5
 - CSS3
+- Fontawesome
+- Google Font
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/rida-elbahtouri/-Bootstrap-project/7d49d470a04f470c86503638e75027c5a80f564a/index.html)
+[Live Demo Link]()
 
 # Getting Started 🚀
 

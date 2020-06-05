@@ -165,6 +165,9 @@ section h2 {
 }
 
 @media screen and (max-width: 1024px) {
+  .nav-form {
+    width: 70%;
+  }
   .steps {
     width: 98%;
   }
