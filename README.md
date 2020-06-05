@@ -17,9 +17,13 @@ this is the HTML/CSS Capstone project, and it is a Car renting web site that lat
 - Fontawesome
 - Google Font
 
+## Deploy Tool
+
+- Netlify
+
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://laughing-kare-56027c.netlify.app/)
 
 # Getting Started 🚀
 
@@ -31,10 +35,10 @@ From your command line, first clone the project:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/rida-elbahtouri/-Bootstrap-project.git
+$ git clone https://github.com/rida-elbahtouri/HTML-CSS-capstone-project.git
 
 # Go into the repository
-$ cd -Bootstrap-project
+$ cd HTML-CSS-capstone-project
 
 ```
 
