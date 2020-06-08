@@ -1,5 +1,5 @@
 main {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .car-info {
@@ -7,19 +7,19 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   margin-bottom: 30px;
 }
 
-.car-info div {
+.information {
   width: 45%;
 }
 
-.location img {
-  width: 100%;
+.image {
+  width: 45%;
 }
 
-.car-info div img {
+.image img {
   width: 100%;
 }
 
@@ -28,13 +28,13 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.75);
+      flex-wrap: wrap;
+  -webkit-box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.75);
   padding: 20px;
   text-align: center;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .information h1 {
@@ -44,17 +44,6 @@ main {
 
 .information .button {
   width: 100%;
-}
-
-.discription button {
-  padding: 2px 3px;
-  font-size: 1.35rem;
-  border: 0;
-  border-radius: 5px;
-  background-color: #f85c50;
-  color: #f1f2f2;
-  width: 100%;
-  margin: 10px 2px;
 }
 
 .information .button button {
@@ -67,10 +56,6 @@ main {
   border: 0;
 }
 
-.discription button:hover {
-  background-color: #f74537;
-}
-
 .information .button button:hover {
   background-color: #f62e1f;
   color: #bcc1c1;
@@ -78,14 +63,6 @@ main {
 
 .information div {
   width: 48%;
-}
-
-.discription p {
-  font-size: 1.1rem;
-}
-
-.discription p span {
-  color: rgba(0, 0, 0, 0.664);
 }
 
 .information div p {
@@ -102,24 +79,24 @@ main {
   border-radius: 5px;
 }
 
-.information div p .red {
+.red {
   background-color: red;
 }
 
-.information div p .gray {
+.gray {
   background-color: gray;
 }
 
-.information div p .blue {
+.blue {
   background-color: #5050f8;
 }
 
-.information div p .black {
+.black {
   color: white;
   background-color: black;
 }
 
-.information div .desc {
+.desc {
   color: blue;
   font-weight: bolder;
 }
@@ -132,8 +109,31 @@ main {
   width: 100%;
 }
 
+.discription p {
+  font-size: 1.1rem;
+}
+
+.discription p span {
+  color: rgba(0, 0, 0, 0.664);
+}
+
 .discription i {
   margin: 0 20px;
+}
+
+.discription button {
+  padding: 2px 3px;
+  font-size: 1.35rem;
+  border: 0;
+  border-radius: 5px;
+  background-color: #f85c50;
+  color: #f1f2f2;
+  width: 100%;
+  margin: 10px 2px;
+}
+
+.discription button:hover {
+  background-color: #f74537;
 }
 
 .location {
@@ -146,16 +146,30 @@ main {
   margin: 20px 0;
 }
 
+.location img {
+  width: 100%;
+}
+
 @media screen and (max-width: 1024px) {
   .car-info {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
-  .car-info div {
+  .information {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .information div {
+    width: 50%;
+    margin: 5px 0;
+  }
+  .image {
     width: 100%;
   }
-
   .button {
     margin-top: 10px;
   }

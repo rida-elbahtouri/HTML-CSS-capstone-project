@@ -13,8 +13,8 @@
     <title>CarRenter</title>
   </head>
   <body>
-    <nav>
-      <div class="left">
+    <nav class="mygray">
+      <div class="left font-title">
         <a href="/index.html"><i class="fas fa-car"></i> CarRenting</a>
       </div>
       <div class="right">
@@ -46,10 +46,10 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
+    <div class="container mx-auto">
       <main class="searchpage">
         <div class="filter-search">
-          <h1>Filter by model,type,color,price</h1>
+          <h1 class="font-title">Filter by model,type,color,price</h1>
           <div class="forms-group">
             <form>
               <label>Car Name :</label>
@@ -57,7 +57,7 @@
             </form>
             <form>
               <label>Car model :</label>
-              <select name="model">
+              <select class="select" name="model">
                 <option value="all">-</option>
                 <option value="Ford">Ford</option>
                 <option value="volvo">Volvo</option>
@@ -68,7 +68,7 @@
             </form>
             <form>
               <label>Car type :</label>
-              <select name="types">
+              <select class="select" name="types">
                 <option value="all">-</option>
                 <option value="small">Small</option>
                 <option value="family">Family</option>
@@ -77,7 +77,7 @@
             </form>
             <form>
               <label>Car Color :</label>
-              <select name="colors">
+              <select class="select" name="colors">
                 <option value="all">-</option>
                 <option value="black">black</option>
                 <option value="white">white</option>
@@ -88,7 +88,7 @@
             </form>
             <form>
               <label>Car Price :</label>
-              <select name="price">
+              <select class="select" name="price">
                 <option value="all">-</option>
                 <option value="less-20">less than 20$</option>
                 <option value="20-40">between 20$ and 40$</option>
@@ -97,15 +97,15 @@
             </form>
             <form class="last">
               <label>-</label>
-              <button class="btn search">Search</button>
-              <button class="btn clear">
+              <button class="btn mygray search">Search</button>
+              <button class="btn mygray clear">
                 <i class="far fa-edit"></i> Clear
               </button>
             </form>
           </div>
         </div>
         <div class="search-result">
-          <h1>Search Results Found 6 car(s)</h1>
+          <h1 class="font-title">Search Results Found 6 car(s)</h1>
           <div class="cards-container">
             <div>
               <a href="/DetailsPage.html"
@@ -113,8 +113,10 @@
                   src="assets/img/cars/blue-bmw-sedan.jpg"
                   alt="blue-bmw-sedan"
               /></a>
-              <a class="link" href="/DetailsPage.html">Blue BMW</a>
-              <span>25$/day</span>
+              <a class="link mygray font-title" href="/DetailsPage.html"
+                >Blue BMW</a
+              >
+              <span class="mygray font-title">25$/day</span>
             </div>
             <div>
               <a href="/DetailsPage.html"
@@ -122,41 +124,51 @@
                   src="assets/img/cars/blue-wagon-audi.jpg"
                   alt="blue-wagon-audi"
               /></a>
-              <a class="link" href="/DetailsPage.html">Blue Audi</a>
-              <span>22$/day</span>
+              <a class="link mygray font-title" href="/DetailsPage.html"
+                >Blue Audi</a
+              >
+              <span class="mygray font-title">22$/day</span>
             </div>
             <div>
               <a href="/DetailsPage.html">
                 <img src="assets/img/cars/merc.jpg" alt="mercedes"
               /></a>
-              <a class="link" href="/DetailsPage.html">Yellow Mercedes</a>
-              <span>39$/day</span>
+              <a class="link mygray font-title" href="/DetailsPage.html"
+                >Yellow Mercedes</a
+              >
+              <span class="mygray font-title">39$/day</span>
             </div>
             <div>
               <a href="/DetailsPage.html"
                 ><img src="assets/img/cars/merc2.jpg" alt="mercedes2"
               /></a>
-              <a class="link" href="/DetailsPage.html">White Mercedes</a>
-              <span>45$/day</span>
+              <a class="link mygray font-title" href="/DetailsPage.html"
+                >White Mercedes</a
+              >
+              <span class="mygray font-title">45$/day</span>
             </div>
             <div>
               <a href="/DetailsPage.html"
                 ><img src="assets/img/cars/volvo.jpg" alt="volvo"
               /></a>
-              <a class="link" href="/DetailsPage.html">Volvo</a>
-              <span>35$/day</span>
+              <a class="link mygray font-title" href="/DetailsPage.html"
+                >Volvo</a
+              >
+              <span class="mygray font-title">35$/day</span>
             </div>
             <div>
               <a href="/DetailsPage.html"
                 ><img src="assets/img/cars/white-nissan.jpg" alt="white-nissan"
               /></a>
-              <a class="link" href="/DetailsPage.html">White Nissan</a>
-              <span>40$/day</span>
+              <a class="link mygray font-title" href="/DetailsPage.html"
+                >White Nissan</a
+              >
+              <span class="mygray font-title">40$/day</span>
             </div>
           </div>
         </div>
       </main>
-      <footer>
+      <footer class="mygray">
         <div class="footer-links">
           <ul>
             <li><a href="#"> HOME</a></li>
@@ -179,7 +191,7 @@
             </h1>
             <div class="submit-email">
               <input type="text" placeholder="your@exemple.com" />
-              <button>Send</button>
+              <button class="mygray">Send</button>
             </div>
           </div>
           <div class="footer-flex-div">
