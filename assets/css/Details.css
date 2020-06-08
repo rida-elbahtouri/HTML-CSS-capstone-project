@@ -7,12 +7,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin-bottom: 30px;
-}
-
-.information {
-  width: 45%;
 }
 
 .image {
@@ -28,13 +24,37 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.75);
+  flex-wrap: wrap;
+  -webkit-box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.75);
   padding: 20px;
   text-align: center;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  width: 45%;
+}
+
+.discription p {
+  font-size: 1.1rem;
+}
+
+.discription p span {
+  color: rgba(0, 0, 0, 0.664);
+}
+
+.discription i {
+  margin: 0 20px;
+}
+
+.discription button {
+  padding: 2px 3px;
+  font-size: 1.35rem;
+  border: 0;
+  border-radius: 5px;
+  background-color: #f85c50;
+  color: #f1f2f2;
+  width: 100%;
+  margin: 10px 2px;
 }
 
 .information h1 {
@@ -54,6 +74,10 @@ main {
   font-size: 1.35rem;
   border-radius: 10px;
   border: 0;
+}
+
+.discription button:hover {
+  background-color: #f74537;
 }
 
 .information .button button:hover {
@@ -109,33 +133,6 @@ main {
   width: 100%;
 }
 
-.discription p {
-  font-size: 1.1rem;
-}
-
-.discription p span {
-  color: rgba(0, 0, 0, 0.664);
-}
-
-.discription i {
-  margin: 0 20px;
-}
-
-.discription button {
-  padding: 2px 3px;
-  font-size: 1.35rem;
-  border: 0;
-  border-radius: 5px;
-  background-color: #f85c50;
-  color: #f1f2f2;
-  width: 100%;
-  margin: 10px 2px;
-}
-
-.discription button:hover {
-  background-color: #f74537;
-}
-
 .location {
   text-align: center;
 }
@@ -153,23 +150,27 @@ main {
 @media screen and (max-width: 1024px) {
   .car-info {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   .information {
     width: 100%;
     margin-top: 10px;
   }
+
   .information div {
     width: 50%;
     margin: 5px 0;
   }
+
   .image {
     width: 100%;
   }
+
   .button {
     margin-top: 10px;
   }

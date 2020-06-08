@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
 h1,
 h2 {
   font-family: "Oswald", sans-serif;
@@ -108,6 +109,11 @@ footer {
   padding: 10px 0;
 }
 
+.soicial-icons a {
+  padding: 0 10px;
+  font-size: 18px;
+}
+
 .footer-links ul li {
   display: inline-block;
   padding: 0 6px;
@@ -115,6 +121,10 @@ footer {
 
 .footer-links ul li a {
   color: inherit;
+}
+
+.soicial-icons a:hover {
+  color: #f1f2f2;
 }
 
 .footer-links ul li a:hover {
@@ -141,7 +151,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin-top: 20px;
   padding-bottom: 20px;
 }
@@ -161,7 +171,7 @@ footer {
   padding: 2px;
   font-size: 1.1rem;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 60%;
 }
 
@@ -179,29 +189,21 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 20px 4%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: gray;
   background-color: #242323;
-}
-
-.soicial-icons a {
-  padding: 0 10px;
-  font-size: 18px;
-}
-
-.soicial-icons a:hover {
-  color: #f1f2f2;
 }
 
 @media screen and (max-width: 1024px) {
   .tablet-hidden {
     display: none;
   }
+
   .nav-form {
     width: 70%;
   }
@@ -212,59 +214,73 @@ footer {
     text-align: center;
     height: 70px;
   }
+
   .left,
   .right {
     float: none;
     padding-left: 0;
   }
+
   .right ul {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     height: 30px;
     margin-top: 10px;
   }
+
   .right ul li {
     margin-right: 8%;
   }
+
   .right ul li:last-child {
     margin-right: 0;
   }
+
   .footer-links ul {
     display: block;
   }
+
   .footer-links ul .last-left {
     padding-left: 6px;
   }
+
   .footer-links ul .last-right {
     padding-right: 6px;
   }
+
   .footer-links span {
     padding: 20px;
     background-color: black;
     border-radius: 50%;
     margin: -10px 0;
   }
+
   .footer-flex {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
+
   .footer-flex-div {
     width: 99%;
     margin: 10px 0;
   }
+
   .submit-email input {
     width: 95%;
   }
+
   .submit-email button {
     margin-top: 5px;
     margin-left: 0;
     width: 95%;
   }
+
   .copyright {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
+
   .copyright div {
     width: 99%;
   }
