@@ -1,0 +1,154 @@
+main {
+  margin-top: 120px;
+}
+
+.filter-search {
+  background-color: #f1f2f2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.filter-search h1 {
+  color: gray;
+  padding-top: 10px;
+}
+
+.forms-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.forms-group form {
+  width: 20%;
+  padding: 10px 5px 50px 5px;
+  text-align: left;
+}
+
+.forms-group form label {
+  display: block;
+  padding: 20px 0;
+}
+
+.forms-group form input {
+  width: 92%;
+  height: 30px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
+.select {
+  width: 100%;
+  height: 34px;
+  font-size: 18px;
+  padding: 3px;
+}
+
+.btn {
+  height: 34px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.search {
+  background-color: #0043a4;
+  margin-right: 10px;
+}
+
+.clear {
+  background-color: #ffc11e;
+}
+
+.search-result {
+  text-align: center;
+}
+
+.search-result h1 {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.cards-container div {
+  width: 32%;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.cards-container div img {
+  width: 100%;
+  height: 100%;
+}
+
+.cards-container div a.link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  background-color: #f85c50;
+}
+
+.cards-container div a.link:hover {
+  color: #f85c50;
+  background-color: #f1f2f2;
+}
+
+.cards-container div span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  background-color: #f85c50;
+}
+
+@media screen and (max-width: 1024px) {
+  .forms-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .forms-group form {
+    width: 98%;
+    padding: 5px 1px 5px 2px;
+  }
+
+  .forms-group form input {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .forms-group .btn {
+    width: 48%;
+  }
+
+  .forms-group .last {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 86px;
+  }
+
+  .cards-container div {
+    width: 99%;
+  }
+}

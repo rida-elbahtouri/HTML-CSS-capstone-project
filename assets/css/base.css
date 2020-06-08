@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+h1,
+h2 {
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.font-title {
+  font-size: 1.35rem;
+}
+
+.mygray {
+  color: #f1f2f2;
+}
+
+.container {
+  max-width: 1500px;
+}
+
+a:hover {
+  color: #d7d9d9;
+}
+
+nav {
+  background-color: #f85c50;
+  height: 40px;
+  padding-top: 16px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+button {
+  cursor: pointer;
+}
+
+.left {
+  float: left;
+  padding-left: 1.35rem;
+  margin-top: -10px;
+}
+
+.left a {
+  margin-top: 10px;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  padding-left: 32px;
+}
+
+.left a i {
+  margin-right: 10px;
+  font-size: 1.8rem;
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+.right {
+  float: right;
+  padding-top: 4px;
+}
+
+.right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.right ul li {
+  margin-right: 15px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.right ul li i {
+  margin-right: 5px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+.footer-links {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-links ul {
+  display: inline-block;
+  border-top: 1px solid #f1f2f2;
+  border-bottom: 1px solid #f1f2f2;
+  padding: 10px 0;
+}
+
+.soicial-icons a {
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.footer-links ul li {
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.footer-links ul li a {
+  color: inherit;
+}
+
+.soicial-icons a:hover {
+  color: #f1f2f2;
+}
+
+.footer-links ul li a:hover {
+  color: #bcc1c1;
+}
+
+.footer-links ul .last-left {
+  padding-left: 12px;
+}
+
+.footer-links ul .last-right {
+  padding-right: 12px;
+}
+
+.footer-links span {
+  padding: 20px;
+  border: 1px solid #f1f2f2;
+  border-radius: 50%;
+  margin: 0 -10px;
+}
+
+.footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-flex-div {
+  width: 25%;
+}
+
+.footer-flex-div h1 {
+  margin-bottom: 10px;
+}
+
+.submit-email input {
+  background-color: transparent;
+  border: 1px solid gray;
+  color: gray;
+  padding: 2px;
+  font-size: 1.1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 60%;
+}
+
+.submit-email button {
+  background-color: gray;
+  border: 1px solid gray;
+  padding: 4px 20px 0;
+  font-weight: bolder;
+  height: 28px;
+  margin-left: -4px;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 20px 4%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: gray;
+  background-color: #242323;
+}
+
+@media screen and (max-width: 1024px) {
+  .tablet-hidden {
+    display: none;
+  }
+
+  .nav-form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    text-align: center;
+    height: 70px;
+  }
+
+  .left,
+  .right {
+    float: none;
+    padding-left: 0;
+  }
+
+  .right ul {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .right ul li {
+    margin-right: 8%;
+  }
+
+  .right ul li:last-child {
+    margin-right: 0;
+  }
+
+  .footer-links ul {
+    display: block;
+  }
+
+  .footer-links ul .last-left {
+    padding-left: 6px;
+  }
+
+  .footer-links ul .last-right {
+    padding-right: 6px;
+  }
+
+  .footer-links span {
+    padding: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin: -10px 0;
+  }
+
+  .footer-flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer-flex-div {
+    width: 99%;
+    margin: 10px 0;
+  }
+
+  .submit-email input {
+    width: 95%;
+  }
+
+  .submit-email button {
+    margin-top: 5px;
+    margin-left: 0;
+    width: 95%;
+  }
+
+  .copyright {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .copyright div {
+    width: 99%;
+  }
+}
